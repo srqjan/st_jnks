@@ -59,7 +59,7 @@ PY25PLUS = sys.version_info[:2] >= (2, 5)
 PY26PLUS = sys.version_info[:2] >= (2, 6)
 PY32PLUS = sys.version_info[:2] >= (3, 2)
 
-# Begin import game to handle Python 2 and Python 3
+## Begin import game to handle Python 2 and Python 3
 try:
     import json
 except ImportError:
