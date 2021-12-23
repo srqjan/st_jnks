@@ -924,7 +924,7 @@ class HTTPUploader(threading.Thread):
         except HTTP_ERRORS:
             self.result = 0
 
-
+#
 class SpeedtestResults(object):
     """Class for holding the results of a speedtest, including:
 
