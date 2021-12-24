@@ -24,7 +24,7 @@ class DeviceInfo(object):
         self.conn = conn
         self.get_info
     
-    # Method that gathers data and assigns attributes to __init__
+   # # Method that gathers data and assigns attributes to __init__
     @property
     def get_info(self):
         result = self.conn.send_command("show version")
