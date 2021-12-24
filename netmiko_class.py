@@ -15,7 +15,7 @@ class Device(object):
         return ConnectHandler(ip=self.ip, device_type=self.device_type,
                               username=self.username, password=self.password)
     
-    # Method that calls DeviceInfo Class and returns atrributes
+   # # Method that calls DeviceInfo Class and returns atrributes
     def get_device_info(self):
         return DeviceInfo(self.connect)
  
