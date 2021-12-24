@@ -15,7 +15,7 @@ class Device(object):
         return ConnectHandler(ip=self.ip, device_type=self.device_type,
                               username=self.username, password=self.password)
     
-   # # Method that calls DeviceInfo Class and returns atrributes
+    # Method that calls DeviceInfo Class and returns atrributes
     def get_device_info(self):
         return DeviceInfo(self.connect)
  
@@ -24,7 +24,7 @@ class DeviceInfo(object):
         self.conn = conn
         self.get_info
     
-   # # Method that gathers data and assigns attributes to __init__
+    # Method that gathers data and assigns attributes to __init__
     @property
     def get_info(self):
         result = self.conn.send_command("show version")
