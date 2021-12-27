@@ -152,8 +152,6 @@ def main():
     # import pdb; pdb.set_trace()
     # breakpoint()
 
-
-############### Huawei Routers Optics #############################################################################
     for host, task_result in nr_hrouters.items():
         data_all = {}
         my_task_data = task_result[0] 
@@ -165,53 +163,7 @@ def main():
 
 #        d = json.loads(results)
 
-#        print("############### HOST ",  host, "#############################")
-    #    print(results)
-     #   print(d[0].keys())    # interfaces ( list)
-#         int_list = list (d[0].values())[0]
-#         for iface in int_list:
-#             iface_params = [host]
-#         #    print (type(iface))  # dct        
-#             if 'if_name' in iface.keys(): 
-#                 ifname = iface['if_name']
-#                 iface_params.append(ifname)
-# #                print(ifname)
-#             if 'Wavelength' in iface.keys():
-#                 Wavelength = '['+iface['Wavelength']+']'
-#                 iface_params.append(Wavelength)
-# #                print(Wavelength)
-#             if 'Vendor' in iface.keys():
-#                 vendor = iface['Vendor']
-# #                print(vendor)
-#             if 'PN' in iface.keys():
-#                 PN = iface['PN']
-# #                print(PN)
-#             if 'Distance' in iface.keys():
-#                 Distance = iface['Distance']
-# #                print(Distance)
-#             if 'RX' in iface.keys():
-#                 Rx = iface['RX'].split()[0]
-#                 THR = float(iface['RX'].split()[-2].replace('[', '').replace(',',''))  # dobijem cist broj 
-# #                print(THR)                
-#                 if THR - (float(Rx.replace('dBm,',''))) > -2:
-#                     RSSI_THR = '[THR_' + iface['RX'].split()[-2] + "]_ALERT"
-#                 else:
-#                     RSSI_THR = '[THR_' + iface['RX'].split()[-2] + "]"
 
-#                 iface_params.append(RSSI_THR)
-#                 # dodaj ovde if thr - rx < 1 -> warning 
-# #                print(Rx)
-#                 data = {'_'.join(iface_params) : Rx }
-# #                print(data) 
-#                 data_all.update(data)
-        
-
-########### INFLUX Telegraf #############
-    #     for k,v in data_all.items():
-    #         d ={k:v}
-    #         hostname = "CORE_RSSI"
-    #         print_influx_metrics(hostname, d)
-    # print(' ')
 
 
 if __name__ == "__main__":
