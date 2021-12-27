@@ -15,7 +15,7 @@
 #    License for the specific language governing permissions and limitations
 #    under the License.
 
-# DODAO SAM DOLE SATTRAKT SPEEDTEST DA SE KORISTI PO DEFAULT-U "http://91.102.224.130"
+## DODAO SAM DOLE SATTRAKT SPEEDTEST DA SE KORISTI PO DEFAULT-U "http://91.102.224.130"
 
 import os
 import re
