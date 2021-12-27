@@ -148,7 +148,7 @@ def main():
 # (Pdb) nr_hrouters['bg-igw'][0].result    # OUTPUT JE S>T>RING REZULT - OUTPUT SA RUTERA 
 
 
-### Ovde stopiramo scriptu i mozemo da chekiramo line by line , uncomment ako hoces pdb 
+#### Ovde stopiramo scriptu i mozemo da chekiramo line by line , uncomment ako hoces pdb 
     # import pdb; pdb.set_trace()
     # breakpoint()
 
